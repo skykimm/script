@@ -80,11 +80,40 @@ const trim1 = "문 자 열     의 앞 뒤   공백 제거하기";
 document.write('--문자열 공백제거-- <br>' );
 document.write(trim1.trim() + '<br><br>');
 
+// 숫자를 문자열로 변환하는 4가지 법
+const text1 = (1234.5).toString();
+const text2 = (678).toString();
+const text3 = (9).toString(4); //2진수값 4 /9 => 2 = 1
 
-// 2021.11.12 오전
+document.write('--숫자를 문자열로 변환하는 4가지 법-- <br>' );
+document.write(text1 + ',' + typeof text1 + '<br>');
+document.write(text2 + ',' + typeof text2 + '<br>');
+document.write(text3 + ',' + typeof text3 + '<br><br>');
+
+const number1 =  123.4;
+const number2 = 567;
+const numstr1 = `${number1}`;
+const numstr2 = `${number2}`;
+
+document.write(number1 + ',' + typeof numstr1 + '<br>');
+document.write(number2 + ',' + typeof numstr2 + '<br><br>');
+
+// 문자열에서 첫번째 글자 / 마지막 글자 가져오기
+const skykim = "스카이킴";
+const first = skykim.charAt(0);
+const second = skykim.charAt(1);
+const last = skykim.charAt(skykim.length-1);
+
+document.write("첫번째 문자 : ", first, '<br>');
+document.write("두번째 문자 : ", second, '<br>');
+document.write("마지막 문자 : ", last, '<br><br>');
+
+
 // ceil => 올림
 // floor => 내림
 // round => 반올림
 // isInteger => 정수, 실수 확인 법
 // toUpperCase => 대문자로 변환, toLocaleLowerCase => 소문자로 변환
 // trim => 문자열 공백제거
+// toString, String => 숫자를 문자열로 변환
+// charAt, substr, substring, slice => 문자열 순서 가져는 법
