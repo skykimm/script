@@ -98,16 +98,6 @@ const numstr2 = `${number2}`;
 document.write(number1 + ',' + typeof numstr1 + '<br>');
 document.write(number2 + ',' + typeof numstr2 + '<br><br>');
 
-// 문자열에서 첫번째 글자 / 마지막 글자 가져오기
-const skykim = "스카이킴";
-const first = skykim.charAt(0);
-const second = skykim.charAt(1);
-const last = skykim.charAt(skykim.length-1);
-
-document.write("첫번째 문자 : ", first, '<br>');
-document.write("두번째 문자 : ", second, '<br>');
-document.write("마지막 문자 : ", last, '<br><br>');
-
 
 // ceil => 올림
 // floor => 내림
@@ -116,4 +106,3 @@ document.write("마지막 문자 : ", last, '<br><br>');
 // toUpperCase => 대문자로 변환, toLocaleLowerCase => 소문자로 변환
 // trim => 문자열 공백제거
 // toString, String => 숫자를 문자열로 변환
-// charAt, substr, substring, slice => 문자열 순서 가져는 법
