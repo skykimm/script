@@ -90,6 +90,7 @@ document.write('<br>');
 document.write(b == null);
 document.write('<br>');
 document.write(b === undefined);
+document.write('<br>');
 
 
 // \, ` => 줄바꿈
