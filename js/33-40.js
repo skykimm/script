@@ -102,3 +102,93 @@ for(let i = 0; i < 5; i++){
     document.write('<br>');
 }
 document.write('<br><br>');
+
+// 정삼각형 별찍기
+for(let i =0; i<5; i++){
+    for(let j = 4; j>i; j--){
+        document.write('&nbsp');
+    }
+    for(let j = 0; j <=i; j++){
+        document.write('*');
+    }
+    for(let j = 1; j <= i; j++){
+        document.write('*');
+    }
+    document.write('<br>');
+}
+document.write('<br><br>');
+
+// 거꾸로 정삼각형 별찍기
+for(let i = 0; i < 5; i++){
+    for(let j = 0; j < i; j++){
+        document.write('&nbsp');
+    }
+    for(let j = 5; j > i; j--){
+        document.write('*');
+    }
+    for(let j = 4; j > i; j--){
+        document.write('*');
+    }
+    document.write('<br>');
+}
+document.write('<br><br>');
+
+// 다이아몬드 별찍기
+for(let i =0; i<5; i++){
+    for(let j = 4; j>i; j--){
+        document.write('&nbsp');
+    }
+    for(let j = 0; j <=i; j++){
+        document.write('*');
+    }
+    for(let j = 1; j <= i; j++){
+        document.write('*');
+    }
+    document.write('<br>');
+}
+for(let i = 0; i < 5; i++){
+    for(let j = 0; j < i; j++){
+        document.write('&nbsp');
+    }
+    for(let j = 5; j > i; j--){
+        document.write('*');
+    }
+    for(let j = 4; j > i; j--){
+        document.write('*');
+    }
+    document.write('<br>');
+}
+document.write('<br><br>');
+
+
+// 구구단찍기
+for(let i = 2; i <= 9; i++){
+    document.write(i + '단');
+    document.write('<br>');
+    for(let j = 1; j <= 10; j++){
+        document.write(i + '*' + j + '=' + (i*j));
+        document.write('<br>');
+    }
+}
+document.write('<br><br>');
+
+// do while 반목문
+// do {
+// }
+// while (조건문);
+let i = 1;
+do{
+    const text = i + '번 째 반복문 <br>';
+    document.write(text);
+    i++;
+}
+while(i <=5);
+document.write('<br><br>');
+
+let s = 1;
+do{
+    const sky = '스카이' + s + '<br>';
+    document.write(sky);
+    s++;
+}
+while(s <=3);
