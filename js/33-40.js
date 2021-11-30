@@ -16,3 +16,68 @@ document.write(str2 == str3);
 document.write('<br>');
 document.write(str2 === str3);
 document.write('<br><br>');
+
+// 비교 연산자 < > 비교하기
+document.write('-- < 와 >의 비교-- <br>');
+document.write('apple' > 'banana');
+document.write('<br>');
+document.write('apple' < 'banana');
+document.write('<br>');
+document.write('apple' > 'abcd');
+document.write('<br>');
+document.write('apple' > 'a');
+document.write('<br>');
+document.write('apple' > 'Banana');
+document.write('<br>');
+document.write('apple' > '1');
+document.write('<br><br>');
+
+// for 반복문
+// for(초기화; 조건식; 증감문){
+    // 반복 할 코드
+// };
+
+for(let i = 0; i < 5; i++){
+    const text = i + "번째 반복문<br>";
+    document.write(text);
+}
+document.write('<br>');
+
+// 배열 읽어오기
+const colors = ['red', 'yellow', 'black'];
+for(let i = 0; i < colors.length; i++){
+    const text = 'This is ' + colors[i] + '<br>';
+    document.write(text)
+}
+
+document.write('<br><br>');
+
+// for문을 이용해 별찍기
+
+// 정사각형 별찍기
+for(let i = 0; i < 5; i++){
+    for(let j = 0; j < 5; j++){
+        document.write('*');
+    }
+    document.write('<br>');
+}
+document.write('<br>');
+
+// 삼각형 별찍기
+for(let i = 0; i < 5; i++){
+    for(let j = 0; j <= i; j++){
+        document.write('*');
+    }
+    document.write('<br>');
+}
+document.write('<br><br>');
+
+for(let i = 0; i < 5; i++){
+    for(let j = 4; j > i; j--){
+        document.write('&nbsp');
+    }
+    for(let j = 0; j <= i; j++){
+        document.write('*');
+    }
+    document.write('<br>');
+}
