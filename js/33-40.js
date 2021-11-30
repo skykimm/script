@@ -192,3 +192,32 @@ do{
     s++;
 }
 while(s <=3);
+document.write('<br><br>');
+
+// 객체의 모든 key, value 값 가져오기
+// for( variable in object){
+// 코드블럭
+//}
+
+const skykim = {
+    name : 'sky',
+    age : 28,
+    id : 'skykim'
+};
+
+for(prop in skykim)  {
+    document.write(prop + " : "  + skykim[prop] + '<br>');
+}
+document.write('<br><br>');
+
+const Colors = {
+    color1 : 'red',
+    color2 : 'black',
+    color3 : 'yellow',
+    color4 : 'gold'
+};
+
+for(prop in Colors){
+    document.write(prop + " : " + Colors[prop] + '<br>');
+}
+document.write('<br><br>');
