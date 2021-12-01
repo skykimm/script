@@ -221,3 +221,44 @@ for(prop in Colors){
     document.write(prop + " : " + Colors[prop] + '<br>');
 }
 document.write('<br><br>');
+
+// for of문
+// for(variable of object){
+//  statement
+//}
+
+document.write('--for of문-- <br>');
+const arr = [1,2,3];
+
+for(Element of arr){
+    document.write(Element);
+    document.write('<br>');
+}
+document.write('<br>');
+
+const arr2 = 'skykim';
+
+for(Element of arr2){
+    document.write(Element);
+    document.write('<br>');
+}
+document.write('<br><br>');
+
+const map = new Map();
+map.set('key1','value1');
+map.set('key2','value2');
+
+for(element of map){
+    document.write(`${element[0]}, ${element[1]}`);
+    document.write('<br>');
+}
+document.write('<br><br>');
+
+const set = new Set();
+set.add('value1');
+set.add('value2');
+
+for(element of set){
+    document.write(element);
+    document.write('<br>');
+}
