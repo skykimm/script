@@ -262,4 +262,45 @@ for(element of set){
     document.write(element);
     document.write('<br>');
 }
+document.write('<br><br>');
 
+document.write('--1부터 100까지의 합 계산-- <br>');
+let sum = 0;
+
+for(let i = 1; i <= 100; i++){
+    sum = sum+i;
+    // 1    0+1 = 1
+    // 3    1+2 = 3
+    // 6    3+3 = 6
+    // 10   6+4 = 10
+    console.log(sum)
+}
+document.write(sum);
+
+let ex = 0;
+for(let i = 1; i < 3; i++){
+    ex = ex+i;
+    //1   0+1
+    //3   1+2
+    console.log(ex);
+}
+console.log(ex);
+
+document.write('<br><br>');
+
+for(let i = 4; i <= 5; i++){
+    document.write(i + '단')
+    document.write('<br>')
+    for(let j = 1; j <= 10; j++){
+        document.write(i + '*' + j + '=' + (i*j))
+        document.write('<br>')
+    }
+}
+
+let ind = 0;
+
+for(let i = 1; i <=3; i++){
+    ind += i;
+    // ind = ind+i;
+    console.log(ind);
+}
