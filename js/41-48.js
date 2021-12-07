@@ -97,3 +97,28 @@ let remove = last2.pop();
 
 document.write('1. remove : ' + remove + '<br>');
 document.write('1. arr : ' +  last2 + '<br><br>');
+
+// 배열의 중간에 값 추가, 삭제하기
+// splice();
+document.write('--앞에 추가하기-- <br>');
+// 앞에 추가
+const array = [1, 2, 3];
+array.splice(0,0,'a','b','c'); // a b 1 2 3
+document.write(array + '<br><br>');
+
+document.write('--뒤에 추가하기-- <br>');
+// 뒤에 추가
+const array2 = [1, 2, 3];
+const array4 = ['a','b','c'];
+const index = [1,2,3,'a','b','c'];
+
+index.splice(array2.length,1,'4','5');
+document.write(index + '<br><br>');
+
+document.write('--중간에 추가하기-- <br>');
+// 중간에 추가
+const array3 = [1, 2, 3];
+array3.splice(1,0,'a','b'); // 1 a b 2 3
+document.write(array3 + '<br><br>');
+
+// (시작점, 끝점 , '넣어야 할 것' , '넣어야 할 것');
