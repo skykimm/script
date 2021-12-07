@@ -40,3 +40,5 @@ color.length = 2;
 document.write(color.length); //2
 document.write('<br>');
 document.write(color);
+
+// 배열값 추가 삭제하기
