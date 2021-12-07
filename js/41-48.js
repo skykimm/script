@@ -40,5 +40,60 @@ color.length = 2;
 document.write(color.length); //2
 document.write('<br>');
 document.write(color);
+document.write('<br><br>');
 
+
+document.write('--배열 값 추가, 삭제하기-- <br>');
 // 배열값 추가 삭제하기
+// 배열 맨 앞 추가 : unshift();
+// 배열 맨 앞 제거 : shift();
+// 배열 맨 뒤에 값 추가 : push();
+// 배열 맨 뒤에 값 제거 : pop();
+// 배열 중간에 값 추가, 삭제 : splice();
+
+
+// 배열 맨 앞 추가
+document.write('--배열 맨 앞 추가-- <br>');
+const ele = ['apple', 'banana', 'orange'];
+const legnth = ele.unshift('one');
+
+document.write(legnth +'<br>');
+document.write(ele + '<br><br>');
+
+document.write('--배열 맨 앞 제거-- <br>');
+const del = ['apple', 'banana'];
+// 1. apple 삭제
+let removed = del.shift();
+document.write('1 . remove : ' + removed + '<br>');
+document.write('1 . arr : ' + del + '<br><br>');
+
+// 2. banana 삭제
+removed = del.shift();
+document.write('2. remove : ' + removed + '<br>');
+document.write('2 . arr : ' + del + '<br><br>');
+
+// 더이상 삭제없음
+removed = del.shift();
+document.write('3 . remove : ' + removed +'<br>');
+document.write('3 . arr : ' + del + '<br><br>');
+
+// document.write('--배열 맨 뒤에 값 추가-- <br>');
+// const last = ['apple', 'banana'];
+// const add = last.push('orange');
+
+// document.write(add +'<br>');
+// document.write(last+'<br>');
+
+document.write('--배열 맨 뒤에 값 추가-- <br>');
+const last = ['apple', 'banana', 'tomato'];
+const add = last.push('orange');
+
+document.write(add+'<br>');
+document.write(last+'<br><br>');
+
+document.write('--배열 맨 뒤에 값 제거-- <br>');
+const last2 = ['apple', 'banana'];
+let remove = last2.pop();
+
+document.write('1. remove : ' + remove + '<br>');
+document.write('1. arr : ' +  last2 + '<br><br>');
