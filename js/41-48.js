@@ -122,3 +122,106 @@ array3.splice(1,0,'a','b'); // 1 a b 2 3
 document.write(array3 + '<br><br>');
 
 // (시작점, 끝점 , '넣어야 할 것' , '넣어야 할 것');
+
+// 배열 합치기 3가지 방법
+document.write('--배열 합치기 3가지 방법-- <br>');
+// concat();
+
+const num = [1,2,3];
+const newNum = num.concat('a',['b','c'],'abc');
+
+document.write(num + '<br>');
+document.write(newNum.length + '<br>');
+document.write(newNum + '<br><br>');
+
+const num1 = [1,2,3];
+const num2 = [4,5,6];
+const num3 = [7,8,9,];
+
+const newNum2 = [
+    num1,
+    num2,
+    num3
+];
+
+document.write(newNum2.length  + '<br>');
+document.write(newNum2 + '<br><br>');
+console.log(newNum2);
+
+// *** newNum2.length = 9가 나오는데 왜일까?
+
+const pu = [1,2,3];
+const pu2 = [4,5,6];
+
+pu.push(pu2);
+
+document.write(pu.length +'<br>'); // 4
+document.write(pu[0] + '<br>'); // 1
+document.write(pu[1] + '<br>'); // 2
+document.write(pu[2] + '<br>'); // 3
+document.write(pu[3] + '<br><br>'); // 4,5,6
+
+document.write('--배열 자르기-- <br>');
+// slice();
+
+const sl = ['a','b','c','d'];
+const sl1 = sl.slice(1,3); // b,c
+const sl2 = sl.slice(1); // b,c,d
+const sl3 = sl.slice(-3,-1); // b,c
+
+document.write(sl1 + '<br>');
+document.write(sl2 + '<br>');
+document.write(sl3 + '<br><br>');
+
+document.write('--배열 같은 값으로 채우기-- <br>');
+const fi = ['a','b','c','d'];
+fi.fill('A');
+
+document.write(fi + '<br>'); // AAAA
+
+const fi2 = ['a','b','c','d'];
+fi2.fill('A',1); // a A A A A
+document.write(fi2 + '<br>'); // a A A A A
+
+const fi3 = ['a','b','c','d'];
+fi3.fill('A',1 ,3); // a A A d
+document.write(fi3 + '<br>'); // a A A d
+
+const fi4 = ['a','b','c','d'];
+fi4.fill('A' , -3, -1); // a A A d;
+document.write(fi4 + '<br><br>'); // a A A d
+
+const fi5 = new Array(4).fill('A');
+document.write(fi5 + '<br><br>');
+
+document.write('--indexOf, lastindexOf-- <br>');
+
+const ind = [1,1,'1',1];
+
+document.write(ind.indexOf(1) + '<br>'); 
+document.write(ind.indexOf('1') + '<br>'); 
+document.write(ind.indexOf(1,1) + '<br><br>'); 
+
+document.write(ind.lastIndexOf(1) + '<br>'); 
+document.write(ind.lastIndexOf('1') + '<br>'); 
+document.write(ind.lastIndexOf(1,1) + '<br><br>');
+
+const ex = ['a',1,'b',2];
+
+document.write(ex.indexOf(1) + '<br>');
+document.write(ex.indexOf('a') + '<br>');
+document.write(ex.indexOf('b') + '<br>');
+document.write(ex.indexOf(1,1) + '<br><br>');
+
+const elem = [1,1,'1',1];
+let form = elem.indexOf(1) // 0
+document.write(form + '<br>');
+
+while(form != -1){
+    // 0 != -1
+    document.write(form+'form' +'<br>'); // 0
+    //              0 + form
+    form = elem.indexOf(1, form+1);
+    // 1을 찾는 0,1,3의 값
+    console.log(form + 'form');
+}
