@@ -80,3 +80,29 @@ document.write(obj2['id'] + '<br>');
 document.write(obj2.product['product type'] + '<br>');
 document.write(obj2['product']['title'] + '<br>');
 document.write(obj2['product'].page + '<br><br>');
+
+const proty = {
+    id : 123,
+    product : {
+        'product type' : 'book',
+        title : 'js start',
+        page : 200
+    }
+};
+
+proty.stock = 100;
+document.write(proty.stock+'<br>');
+
+proty.id = 456;
+document.write(proty.id+'<br><br>');
+
+const com = {};
+
+['red', 'green', 'blue'].forEach((color) => {
+    com[color] = color.substring(0,1);
+});
+
+document.write(Object.keys(com).length + '<br>');
+document.write(com.red +'<br>');
+document.write(com.green +'<br>');
+document.write(com.blue +'<br><br>');
