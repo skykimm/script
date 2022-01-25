@@ -106,3 +106,24 @@ document.write(Object.keys(com).length + '<br>');
 document.write(com.red +'<br>');
 document.write(com.green +'<br>');
 document.write(com.blue +'<br><br>');
+
+const person = {
+    name : 'sky',
+    country : 'korea'
+}
+
+const haveName = person.hasOwnProperty('name');
+const haveAge = person.hasOwnProperty('age');
+
+document.write(haveName + '<br>');
+document.write(haveAge + '<br><br>');
+
+const person2  = {
+    name : 'skykim',
+    country : 'suwon'
+}
+const havename = 'name' in person2;
+const havecon = 'country' in person2;
+
+document.write(havename + '<br>');
+document.write(havecon + '<br><br>');
