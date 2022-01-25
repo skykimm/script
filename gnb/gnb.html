@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+      <!-- navigation -->
+    <header id="gnbBar" class="gnb-wrap">
+        <section class="gnb-bar">
+        <a href="#none" class="logo">
+            <h1>GENESIS</h1>
+        </a>
+        <!-- 버튼 그룹 추가 -->
+        <div class="ico-wrap">
+            <button class="ico-search">search</button>
+            <button class="ico-mypage">Mypage</button>
+            <button id="gnbMenu" class="ico-menu">Menu</button>
+        </div>
+        </section>
+        <!-- search 추가-->
+        <aside class="search">
+        <input type="text" class="search-ip" id="ipSearch" placeholder="검색어를 입력해주세요">
+        <button class="search-btn">search</button>
+        </aside>
+    </header>
+
+    <aside id="gnb" class="gnb">
+        <nav>
+        <button type="button" class="btn-ico btn-nav-close src-gnb-close"></button>
+        <!-- dropdown 변경 -->
+        <select name="sort" id="" class="dropdown sort">
+            <option default value="G70">G70</option>
+            <option value="GV70">GV70</option>
+        </select>
+        <!-- navigation list -->
+        <section class="gnb-list-group">
+            <ul class="gnb-list">
+            <li class="active"><a href="">INTRODUCTION</a></li>
+            <li><a href="#none">DESIGN</a></li>
+            <li><a href="#none">PERFORMANCE</a></li>
+            <li><a href="#none">ADVANCED TECHNOLOGY</a></li>
+            <li><a href="#none">CONVENIENCE</a></li>
+            <li><a href="#none">SPEC COMPARISON</a></li>
+            </ul>
+            <span class="divider"></span>
+            <ul class="gnb-user-list">
+            <li><a href="#none">MY PAGE</a></li>
+            <!-- 퀴즈학습 추가 -->
+            <li><a href="#none">QUIZ</a></li>
+            <li><a href="#none">SITEMAP</a></li>
+            </ul>
+            <section class="btn-group grid-flex-between">
+            <!-- dropdown 변경 -->
+            <select name="lang" id="" class="dropdown lang">
+                <option default value="KOR">KOREAN</option>
+                <option value="ENG">ENGLISH</option>
+            </select>
+            <button type="button" class="btn btn-sm">LOGOUT</button>
+            </section>
+        </section>
+        </nav>
+    </aside>
+</body>
+</html>

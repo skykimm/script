@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            margin-bottom: 1000px;
+        }
+        .motion{
+            border: 1px solid red;
+            height: 500px;
+        }
+
+        section .motion.slide_top {
+        opacity: 0;
+        -webkit-transform: translateY(80px);
+                transform: translateY(80px);
+        }
+     
+        section .motion.is_on.slide_top{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-transition: opacity 1s linear, -webkit-transform 1s ease-out;
+        transition: opacity 1s linear, -webkit-transform 1s ease-out;
+        transition: transform 1s ease-out, opacity 1s linear;
+        transition: transform 1s ease-out, opacity 1s linear, -webkit-transform 1s ease-out;
+    }
+    </style>
+</head>
+
+<body>
+    
+    <div class="wrap">
+        <section>
+            <article class="motion slide_top"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptates delectus ipsum quo, pariatur neque dolorum deleniti excepturi officia dignissimos minus quam voluptas ducimus consectetur harum quas ipsa? Exercitationem, odit!</p></article>
+            <article class="motion slide_top"><p>김자영</p></article>
+            <article class="motion slide_top"><p>김자영</p></article>
+            <article class="motion slide_top"><p>김자영</p></article>
+            <article class="motion slide_top"><p>김자영</p></article>
+            <article class="motion slide_top"><p>김자영</p></article>
+            <article class="motion slide_top"><p>김자영</p></article>
+        </section>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="test.js"></script>
+
+
+
+</html>
