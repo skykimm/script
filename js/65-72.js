@@ -127,3 +127,28 @@ const havecon = 'country' in person2;
 
 document.write(havename + '<br>');
 document.write(havecon + '<br><br>');
+
+const set = new Set([1,2,3]);
+const setArr = Array.from(set);
+
+document.write(Array.isArray(setArr)+'<br>');
+document.write(setArr+'<br><br>');
+
+const setfor = new Set([1,2,3]);
+const arrfor = [];
+
+setfor.forEach((Element) => {
+    arrfor.push(Element);
+})
+document.write(Array.isArray(arrfor) + '<br>');
+document.write(arrfor+'<br><br>');
+
+const leng = {
+    product : 'book',
+    id : 123,
+    page : 29,
+    name : 'sky'
+};
+
+const count = Object.keys(leng).length;
+document.write(count);
