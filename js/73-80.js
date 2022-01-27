@@ -103,4 +103,14 @@ function sky(isme,isme2){
     return newSky;
 }
 
-document.write(JSON.stringify(sky(isme,isme2)));
+document.write(JSON.stringify(sky(isme,isme2))+'<br><br>');
+
+let today = new Date();
+let year = today.getFullYear();
+let month = today.getMonth() +1;
+let date = today.getDate();
+let day = today.getDay();
+
+document.write(today + '<br>');
+document.write(year + '/' + month + '/' +  date +'<br>');
+document.write(day + '<br><br>');
