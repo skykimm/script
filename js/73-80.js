@@ -114,3 +114,4 @@ let day = today.getDay();
 document.write(today + '<br>');
 document.write(year + '/' + month + '/' +  date +'<br>');
 document.write(day + '<br><br>');
+
