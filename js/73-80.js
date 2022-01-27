@@ -80,3 +80,27 @@ function empty(obj2){
 document.write(empty(obj1) + '<br>');
 document.write(empty(obj2) + '<br>');
 document.write(empty(str) + '<br><br>');
+
+const isme = {
+    name : "sky",
+    age : 29
+};
+
+const isme2 = {
+    country : "suwon",
+    age : 29
+};
+
+function sky(isme,isme2){
+    const newSky = {};
+    for(let att in isme){
+        newSky[att] = isme[att];
+    }
+
+    for(let att in isme2){
+        newSky[att] = isme2[att];
+    }
+    return newSky;
+}
+
+document.write(JSON.stringify(sky(isme,isme2)));
