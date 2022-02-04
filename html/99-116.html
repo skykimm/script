@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <input type='button' value='createDiv' onclick='createDiv()'/> <br /><br />
+
+    <div id='my_div'>버튼을 누르면 이 div는 삭제됩니다.</div>
+    <input type='button' value='deleteDiv' onclick='deleteDiv()'/> <br /><br />
+
+
+    <div id='div_1' class='my_class'>Div1입니다.</div>
+    <div id='div_2' class='your_class'>Div2입니다.</div>
+
+    <input type='button' value='getElementById() - id로 찾기' onclick='getDiv1()'/> <br /><br />
+    <input type='button' value='getElementsByClassName() - class이름으로 찾기' onclick='getMyClass()'/> <br /><br />
+
+    <input type='button' id='my_button' value='클릭하세요' /> <br /><br />
+
+    <input type='button' id='my_btn2' value='이 버튼은 한번만 실행됩니다' /><br /><br />
+
+    <input type='button' value='+' onclick='count("plus")'/>
+    <input type='button' value='-' onclick='count("minus")'/>
+    <div id='result'>0</div><br /><br />
+
+
+    <input id='target_btn' type='button' value='버튼'/><br /><br />
+    <div>'활성화' 또는 '비활성화' 버튼을 클릭하세요</div>
+
+    <input type='button' value='활성화' onclick='btnActive()'/>
+    <input type='button' value='비활성화'onclick='btnDisabled()'/>
+    <input type='button' disabled='disabled' value='비활성화2'/><br /><br />
+
+
+    <input id='go_home' type='button' value='이 버튼을 클릭하면 블로그 홈으로 이동합니다.' onclick='newPage()'/><br /><br />
+
+
+    <ul id='fruits'></ul>
+
+    <input type='text' id='addValue' />
+    <input type='button' value='추가' onclick='addList()' /> <br /><br />
+
+    <input type='text' id='addValue' />
+    <input type='button' value='삭제' onclick='removeItem()' /> <br /><br />
+
+    <ol id='fruits2'></ol>
+
+    <input type='text' id='addValue2' />
+    <input type='button' value='추가' onclick='addList2()' /> <br /><br />
+
+
+    <script src="../js/99-107.js"></script>
+    <script src="../js/108-116.js"></script>
+</body>
+
+
+
+</html>
